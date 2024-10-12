@@ -1,6 +1,7 @@
 package com.DevCraftLab.QuickMail.Service;
 
 import java.io.File;
+import java.io.InputStream;
 
 public interface EmailService {
     //send email to single person
@@ -11,4 +12,5 @@ public interface EmailService {
     void sendEmailWithHTML(String to, String subject, String htmlContent);
     //send mail with file
     void sendEmailWithFile(String to, String subject, String message, File file);
+    void sendEmailWithFile(String to, String subject, String message, InputStream inStream);
 }
